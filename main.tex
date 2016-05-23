@@ -7,42 +7,55 @@
 \usepackage{apacite} 
 
 
-\title{Reproducibility and Reusability}
-
-\shorttitle{Reproducibility and Reusability}
+%\title{Reproducibility and Reusability}
+\title{Replication and Reuse in Computational Modelling}
+%\shorttitle{}
 
 \twoauthors{Olivia Guest}{Nicolas P .Rougier}
 
-\twoaffiliations{Department of Experimental Psychology, University of Oxford, United Kingdom}{NRIA Bordeaux Sud Ouest, Institute of Neurodegenrative Diseases, France}
+\twoaffiliations{Department of Experimental Psychology, University of Oxford, United Kingdom}{INRIA Bordeaux Sud Ouest, Institute of Neurodegenerative Diseases, France}
 
 %olivia.guest@psy.ox.ac.uk
 %nicolas.rougier@inria.fr
 \abstract{}
 
-%https://github.com/barbagroup/snake-repro
-
 \begin{document}
 
 \maketitle
 
-Computational modelling is the process by which phenomena within complex systems are captured algorithmically, using a computer.
+Computational modelling is the process by which phenomena found in complex systems are expressed algorithmically.
 The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working copies of the phenomena we are studying.
 In neuro- and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also provides an implementation of the theory.
-Thus, it gives scientists a method of allowing their ideas to be executed, for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
+Thus, it gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
 
-One way to evaluate our modelling efforts is \emph{reproduction}.
-Reproduction is the process by which a model is recreated based on its specification: the details deemed important enough to be included within the journal article.
-If there is enough information in the specification to recreate the model's codebase from scratch, then the model is replicable/reproducible, adding more credence to both the model itself and the theory or account in which it resides.
-If not, then even if the experiments can be carried out successfully within the original (often opaque) codebase, then the model is not able to be reimplemented (given the current specification).
+One way to evaluate our modelling efforts, and thus our theories, is \emph{replication} \cite<reproduction and replication used interchangeably as currently no consensus exists on differences, if any, cf.>{drummond09, gomez10, peng09}.
+Replication involves recreating a model based on its specification: the details deemed important enough to be included within the journal article \cite{hinsen15}.
+This should be possible, ideally, without needing to contact the authors for advice, and critically, without looking at the original code \cite{cooper14}.
+If there is enough information in the specification to successfully recreate the codebase from scratch, then the model is reproducible, adding more credence to both the model itself and its overarching theoretical framework.
+If not, then even if the experiments can be carried out successfully within the original codebase, then the model is not able to be reimplemented (given the current specification).
 This is a cornerstone of the scientific method.
-If an experiment, whether code-based or not, cannot be replicated, that brings into question related theories.
-If such failures to replicate happen enough, what is known as a replication ``crisis'' can occur -- a domino-like effect of important theories losing their solid evidence, which some hold is taking place in psychology.
+If a paradigm or experiment is resistant to replication, related theories are also brought into question.
+An important corollary is that if failures to replicate happen often so-called \emph{replication crises} occur --- wherein important theories lose their credibility in a domino-like effect.
+It is held that there are ongoing crises within psychology \cite{baker15, carpenter12,osc15}, computational science \cite{crook13,peng11}, biology/medicine \cite{hayden12,vannoorden15}, and political science \cite{king95}.
 
-Another way to evaluate models is if they are reused.
+Another way to evaluate models is whether they are used by other researchers to capture the same or similar phenomena, i.e., model \emph{reuse}.
+In other words, an implementation is created of a specific model by scientist A and scientist B uses that instead of attempting a replication.
 In the same way all scientists aim to have their work cited, should modellers also aim to have their codebases reused in part or in full?
-And does reuse impinge in any way on the arduous and often unrewarding task of reproduction?  
+And does reuse impinge in any way on the arduous, time-consuming \cite<for example, see:>{topalidou15}, and often unrewarding task of replication?
+Undoubtedly, making the full codebase available in an online repository can have many beneficial side-effects, especially if well-documented  \cite{hucka16}.
+For example, open source projects facilitate: pedagogy; bug-finding; dissemination; maintenance; augmentation; and so on.
+To wit, openly accessible codebases lead to both better \emph{code} and better \emph{coders} \cite{easterbrook14}.
+However, making the full code available has the propensity to be zero-sum with rerunning experiments from scratch, i.e., full replication \cite<similar points raised in:>{cooper14,drummond09}.
 
-Over the last decades, computational modelling has become a tool of choice for investigating brain and cognition and several journals are now entirely dedicated to the computational aspect of neurosciences, biology or cognitive sciences. In the meantime, computer science has progressed at a very fast pace and offers today a large number of tools that should have resulted in facilitating share and the re-use of models. But this is hardly the case. If there are several reasons to explain this situation, the main one is certainly the non-reproducibility of computational models whose origins are as diverse as they can be. These range from the simple (and widespread) non-availability of the source code up to flawed implementations that prevent to reproduce original results. This has be known for quite a long time by the community but hardly any progress has been made. Only recently some recommendations have been written for producing reproducible computational research and some journals now request the source code to be available. But even if such source code is made available and is reproducible, this does not guarantee a model to be re-used. The inner complexity and fragility of a model may actually prevent someone to re-use it and this might explain for example why there is certainly something like a thousand models of V1 in the literature.
+In conclusion, while it is extremely desirable to make source code available --- more and more journals are correctly requesting code, as well as raw data --- this must be tempered with the understanding that having the code for a model is not the same as having the specification.
+As such, provision of code, while extremely useful, makes little direct contribution to theory evaluation: the main goal of science.
+To benchmark theoretical accounts computationally (the aim of modelling), we must scrutinise specifications, not just codebases.
+
+
+
+% \section{Nicolas}
+
+% Over the last decades, computational modelling has become a tool of choice for investigating brain and cognition and several journals are now entirely dedicated to the computational aspect of neurosciences, biology or cognitive sciences. In the meantime, computer science has progressed at a very fast pace and offers today a large number of tools that should have resulted in facilitating share and the re-use of models. But this is hardly the case. If there are several reasons to explain this situation, the main one is certainly the non-reproducibility of computational models whose origins are as diverse as they can be. These range from the simple (and widespread) non-availability of the source code up to flawed implementations that prevent to reproduce original results. This has be known for quite a long time by the community but hardly any progress has been made. Only recently some recommendations have been written for producing reproducible computational research and some journals now request the source code to be available. But even if such source code is made available and is reproducible, this does not guarantee a model to be re-used. The inner complexity and fragility of a model may actually prevent someone to re-use it and this might explain for example why there is certainly something like a thousand models of V1 in the literature.
 
 
 \bibliographystyle{apacite}
