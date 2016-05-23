@@ -1,0 +1,50 @@
+\documentclass[jou]{apa6}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{hyperref}
+\usepackage{apacite} 
+
+
+\title{Reproducibility and Reusability}
+
+\shorttitle{Reproducibility and Reusability}
+
+\twoauthors{Olivia Guest}{Nicolas P .Rougier}
+
+\twoaffiliations{Department of Experimental Psychology, University of Oxford, United Kingdom}{NRIA Bordeaux Sud Ouest, Institute of Neurodegenrative Diseases, France}
+
+%olivia.guest@psy.ox.ac.uk
+%nicolas.rougier@inria.fr
+\abstract{}
+
+%https://github.com/barbagroup/snake-repro
+
+\begin{document}
+
+\maketitle
+
+Computational modelling is the process by which phenomena within complex systems are captured algorithmically, i.e., using a computer.
+The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working copies of the phenomena we are studying.
+In neuro- and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also provides an implementation of the theory.
+Thus, giving scientists a method of allowing their ideas to be executed, for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
+
+One way to evaluate our modelling efforts is \emph{reproduction}.
+Reproduction is the process by which a model is recreated based on its specification, i.e., the details deemed important enough to be included within the journal article.
+If there is enough information in the specification to recreate the model  from scratch, then the model is reimplementable, which adds more credence to both the model itself and the theory or account in which it resides. If not, then even if the experiments can be carried out within the original (presumably opaque) codebase, then the model is not able to be reimplemented (given the current specification). 
+
+
+
+Over the last decades, computational modelling has become a tool of choice for investigating brain and cognition and several journals are now entirely dedicated to the computational aspect of neurosciences, biology or cognitive sciences. In the meantime, computer science has progressed at a very fast pace and offers today a large number of tools that should have resulted in facilitating share and the re-use of models. But this is hardly the case. If there are several reasons to explain this situation, the main one is certainly the non-reproducibility of computational models whose origins are as diverse as they can be. These range from the simple (and widespread) non-availability of the source code up to flawed implementations that prevent to reproduce original results. This has be known for quite a long time by the community but hardly any progress has been made. Only recently some recommendations have been written for producing reproducible computational research and some journals now request the source code to be available. But even if such source code is made available and is reproducible, this does not guarantee a model to be re-used. The inner complexity and fragility of a model may actually prevent someone to re-use it and this might explain for example why there is certainly something like a thousand models of V1 in the literature.
+
+
+\bibliographystyle{apacite}
+
+\bibliography{ref}
+
+% The following space works around a bug in typesetting the references, where the hanging indent of the last reference is incorrectly set.
+\hspace*{1cm}
+
+
+\end{document}
