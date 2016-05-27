@@ -26,61 +26,46 @@
 \maketitle
 
 Computational modelling is the process by which phenomena found in complex
-systems are expressed algorithmically and/or mathematically to be eventually
-simulated. The creation of such simulations is useful because it allows us to
+systems are expressed algorithmically and/or mathematically.
+The creation of such simulations is useful because it allows us to
 test whether our understanding is sophisticated enough to create credible
-working models of the phenomena we are studying. In neuroscience and cognitive
-science especially, computational modelling comprises more than just capturing
-a single phenomenon, it also provides an implementation of the theory. Thus, it
-gives scientists a method of allowing their ideas to be executed, i.e., for
-emergent properties to appear when they are implemented and run as code
-\cite{mcclelland09}.
+working models of the phenomena we are studying.
+In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also provides an implementation of a theory.
+Thus, it gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
 
-\subsection*{Reproducibility is good}
+\subsection*{Reproducibility}
 
-For such models to be evaluated by peers, it is important to ensure these
-models are reproducible, that is, that they offer the possibility of being
-recreated based on their sole specification: the details deemed important
-enough to be included within the article \cite{hinsen15}. This should be
-possible, ideally, without needing to contact the authors for advice, and
-critically, without even looking at the original code \cite{cooper14}. If
-there is enough information in the specification to successfully recreate
-the codebase from scratch, then the model is said reproducible, adding
-more credence to both the model itself and its overarching theoretical
-framework. If not, then even if the experiments can be carried out successfully
-within the original codebase, then the model is not able to be reimplemented
-(given the current specification). This is a cornerstone of the scientific
-method. If a paradigm or experiment is resistant to reproduction, related
-theories are also brought into question. An important corollary is that if
-failures to reproduce happen often so-called reproducibility crises occur —
-wherein important theories lose their credibility in a domino-like effect.
+For models to be evaluated, it is important to first ensure they are reproducible. 
+That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
+Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
+If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
+This adds further credence to both the model and its overarching theoretical
+framework.
+If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is reproducible (given the current specification).
+
+Reproduction is a cornerstone of the scientific method.
+If a paradigm or experiment is resistant to attempts at reproduction, related
+theories are also brought into question.
+An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur --- wherein theories lose their credibility in a domino-like effect.
 
 
-\subsection*{Reproducibility is a first step}
+\subsection*{The First Few Steps}
 
-In 1665, the first academic journal ("Le Journal des sçavans") was published in
-Paris and since then (350 years ago), nothing has really changed: research
-communication is still and mostly a matter of text, figures, tables and
-references (with the major difference that we don't print them anymore). But
-where does the code fit in such framework ? Footnotes ? Compressed archive in
-the supplementary material ? A link to a repository somewhere on the internet ?
-Even if more and more journals are correctly requesting code, as well as raw
-data, it is nonetheless striking to see that in the meantime they do not
-provide the infrastructure for hosting such code or data, as if these were
-second-class citizen. On the other side of the internet however, things are
-moving and changing fast. Computer science has progressed a lot in the last few
-years and now offers a large number of innovative tools (notebook, containers,
-dynamic figures, etc.) that facilitate the share and the re-use of
-models. Incidently, the first article with an interactive figure has just been
-published a few months ago while the IPython notebook for the gravitational
-wave discover has been made public.
+There have been few drastic changes within scholarly communication and research dissemination between 1665, when the first academic journals (\textit{Le Journal des sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
+Dissemination of scientific discoveries by publishers continues to consist primarily of static text and figures.
+However, most research is underpinned by, if not wholly comprised of, code, which is inherently dynamic.
+Given code forms the backbone of modern scientific research, it is perhaps unusual that its position within this framework is not clear.
+For example, it is not straightforward where codebases should be placed: in a footnote, as supplementary material, or in a repository somewhere online?
+Even if increasingly more journals are requesting code from us, as well as raw data, it is nonetheless striking that an overwhelming number of publishers make no provisions for hosting these files.
 
-\subsection*{Towards Science 2.0}
+Meanwhile in other parts of cyberspace, things are rapidly changing.
+A large number of innovative software tools (notebooks, containers, dynamic figures, etc.) have been created that facilitate model sharing and re-use.
+For example, the first article with an interactive figure was published a few months ago (REFERENCE TO IT!), and the Jupyter Notebook on the discovery of gravitational waves has been made public.
 
-Maybe the time is ripe for the community to envisage radical changes in the
-way of sharing and reusing computational research. There is already some new
-initiative such as the ReScience\footnote{\url{rescience.github.io}} journal
-that encourage the replication of models and lives on github.
+\subsection*{Towards a Better Science}
+
+Perhaps the scientific community is ready for radical change in the dissemination of computational research, especially with respect to sharing and re-using code.
+Initiatives, such as the ReScience journal ({\url{http://rescience.github.io}}), that encourage replication of modelling work, appear to be promising some solutions to the wider problems mentioned above.
 
 
 \bibliographystyle{apacite}
