@@ -4,8 +4,14 @@
 \usepackage[english]{babel}
  
 \usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 \usepackage{apacite} 
-
 
 %\title{Reproducibility and Reusability}
 %\title{Replication and Reuse in Computational Modelling}
@@ -15,7 +21,9 @@
 
 \twoauthors{Olivia Guest}{Nicolas P. Rougier}
 
-\twoaffiliations{Department of Experimental Psychology\\University of Oxford, United Kingdom}{INRIA Bordeaux Sud Ouest\\Institute of Neurodegenerative Diseases, France}
+\twoaffiliations{Department of Experimental Psychology\\University of Oxford, United Kingdom}{INRIA Bordeaux Sud-Ouest, Talence, France\\
+Institut des Maladies Neurodégénératives, Université Bordeaux, Centre National de la Recherche Scientifique, UMR 5293, Bordeaux, France\\
+LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux, Centre National de la Recherche Scientifique, UMR 5800, Talence, France}
 
 %olivia.guest@psy.ox.ac.uk
 %nicolas.rougier@inria.fr
@@ -25,48 +33,44 @@
 
 \maketitle
 
-Computational modelling is the process by which phenomena found in complex
-systems are expressed algorithmically and/or mathematically.
-The creation of such simulations is useful because it allows us to
-test whether our understanding is sophisticated enough to create credible
-working models of the phenomena we are studying.
+Computational modelling is the process by which phenomena found in complex systems are expressed algorithmically and/or mathematically.
+The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working models of the phenomena we are studying.
 In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also provides an implementation of a theory.
 Thus, it gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
 
-\subsection*{Reproducibility}
+\subsection*{What is reproducibility?}
 
 For models to be evaluated, it is important to first ensure they are reproducible. 
 That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
-Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
+Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14,topalidou15}.
 If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
-This adds further credence to both the model and its overarching theoretical
-framework.
-If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible (given the current specification).
+This adds further credence to both the model and its overarching theoretical framework.
+If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible (given the current specification) and is only replicable \cite{crook13}.
 
 Reproduction is a cornerstone of the scientific method.
-If a paradigm or experiment is resistant to attempts at reproduction, related
-theories are also brought into question.
-An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur --- wherein theories lose their credibility in a domino-like effect.
+If a paradigm or experiment is resistant to attempts at reproduction, related theories are also brought into question.
+An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur \cite{osc15} --- wherein theories lose their credibility in a domino-like effect.
 
 
-\subsection*{The First Few Steps}
+\subsection*{Where is your code?}
 
 There have been few drastic changes within scholarly communication and research dissemination between 1665, when the first academic journals (\textit{Le Journal des sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
 Dissemination of scientific discoveries by publishers continues to consist primarily of static text and figures.
 However, most research is underpinned by, if not wholly comprised of, code, which is inherently dynamic.
 Given code forms the backbone of modern scientific research, it is perhaps unusual that its position within this framework is not clear.
 For example, it is not straightforward where codebases should be placed: in a footnote, as supplementary material, or in a repository somewhere online?
-Even if increasingly more journals are requesting code from us, as well as raw data, it is nonetheless striking that an overwhelming number of publishers make no provisions for hosting these files.
+Even if increasingly more journals are requesting code from us, as well as raw data and even if several community repositories have appeared over the years, it is nonetheless striking that an overwhelming number of publishers make absolutely no provisions for hosting these files or facilitating interaction with them.
+
+
+\subsection*{Is it time for a change?}
 
 Meanwhile in other parts of cyberspace, things are rapidly changing.
-A large number of innovative software tools (notebooks, containers, dynamic figures, etc.) have been created that facilitate model sharing and re-use.
-For example, the first article with an interactive figure was published a few months ago \cite{ogrean16}, and the Jupyter Notebook on the discovery of gravitational waves has been made public.
+A large number of innovative software tools (notebooks, virtual containers, dynamic figures, etc.) have been designed such as to facilitate model publication, sharing and re-use.
+For example, the first article with an interactive figure was published a few months ago \cite{ogrean16}, the \href{http://jupyter.org}{Jupyter notebook} on the discovery of gravitational waves has been made public.
+Perhaps the scientific community is ready for a radical change in the dissemination of computational research, especially with respect to sharing and re-using code.
+Initiatives, such as the \href{http://rescience.github.io}{ReScience journal}, that encourage the explicit reproduction of modelling work, appear to be promising some solutions to the wider problems mentioned above while the \href{https://github.com/everpub}{everpub} open science proposal may give a glimpse of our collaborative and open future.\\
 
-\subsection*{Towards a Better Science}
-
-Perhaps the scientific community is ready for radical change in the dissemination of computational research, especially with respect to sharing and re-using code.
-Initiatives, such as the ReScience journal ({\url{http://rescience.github.io}}), that encourage replication of modelling work, appear to be promising some solutions to the wider problems mentioned above.
-
+We, as researchers, have a certainly role to play and should become the driving force for the upcoming changes.
 
 \bibliographystyle{apacite}
 
