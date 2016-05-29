@@ -32,43 +32,43 @@ LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux, Centre Natio
 
 \maketitle
 
+Reproduction is a cornerstone of the scientific method.
+If a paradigm or experiment is resistant to attempts at reproduction, related theories are also brought into question.
+An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur \cite{osc15} --- wherein theories lose their credibility in a domino-like effect.
+
+\subsection*{What is computational reproducibility?}
+
 Computational modelling is the process by which phenomena found in complex systems are expressed algorithmically and/or mathematically.
 The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working models of the phenomena we are studying.
 In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also provides an implementation of a theory.
 Thus, it gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
 
-\subsection*{What is reproducibility?}
-
-For models to be evaluated, it is important to first ensure they are reproducible. 
+However, for models to be evaluated, tested, criticized or even rejected, it is important to first ensure they are reproducible \cite{topalidou15}.  
 That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
-Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14,topalidou15}.
+Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
 If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
 This adds further credence to both the model and its overarching theoretical framework.
-If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible (given the current specification) and is only replicable \cite{crook13}.
-
-Reproduction is a cornerstone of the scientific method.
-If a paradigm or experiment is resistant to attempts at reproduction, related theories are also brought into question.
-An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur \cite{osc15} --- wherein theories lose their credibility in a domino-like effect.
+If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible (given the current specification) and is at most replicable \cite{crook13}.
 
 
-\subsection*{Where is your code?}
+\subsection*{How do we share computational research?}
 
-There have been few drastic changes within scholarly communication and research dissemination between 1665, when the first academic journals (\textit{Le Journal des sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
+There have been few drastic changes within scholarly communication and research dissemination since 1665, when the first academic journals (\textit{Le Journal des Sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
 Dissemination of scientific discoveries by publishers continues to consist primarily of static text and figures.
 However, most research is underpinned by, if not wholly comprised of, code, which is inherently dynamic.
 Given code forms the backbone of modern scientific research, it is perhaps unusual that its position within this framework is not clear.
-For example, it is not straightforward where codebases should be placed: in a footnote ({\em code can be requested from the author}), as supplementary material, or in a repository somewhere online?
+For example, it is not straightforward where codebases should be placed: in a footnote ({\em code available upon request} syndrom), as supplementary material, or in a repository somewhere online?
 Even if increasingly more journals are requesting code from us, as well as raw data and even if several community repositories have appeared over the years, it is nonetheless striking that an overwhelming number of publishers make absolutely no provisions for hosting these files or facilitating interaction with them.
 
 
-\subsection*{It is time for a change}
+\subsection*{Is time ripe for radical changes in publication?}
 
 Meanwhile in other parts of cyberspace, things are rapidly changing.
-A large number of innovative software tools (notebooks, virtual containers, dynamic figures, etc.) have been designed such as to facilitate model publication, sharing and re-use.
-For example, the first article with an interactive figure was published a few months ago \cite{ogrean16}, the Jupyter notebook\footnote{\url{http://jupyter.org}} on the discovery of gravitational waves has been made public and the binder project\footnote{\url{http://mybinderproject}} now offers the possibility to have online executable environment.
-At another level, the ReScience journal\footnote{\url{http://rescience.github.io}}, that encourage the explicit reproduction of modelling work, appear to be promising some partial solutions to the wider problems mentioned above by tightly linking article and code repository.\\
+A large number of innovative software tools (notebooks, virtual containers, active papers, dynamic figures, etc.) have been designed such as to facilitate model publication, sharing and re-use.
+For example, the first article with an interactive figure was published a few months ago \cite{ogrean16}, the Jupyter notebook\footnote{\url{http://jupyter.org}} on the discovery of gravitational waves has been made public and the binder project\footnote{\url{http://mybinderproject}} now offers the possibility to have online executable environments.
+At a different level, the ReScience journal\footnote{\url{http://rescience.github.io}},  that encourages the explicit reproduction of modelling work, appear to be promising some partial solutions to the wider problems mentioned above by tightly linking the article and its associated code repository.\\
 
-But we can go further and perhaps the scientific community is ready for a radical change in the dissemination of computational research, especially with respect to sharing and re-using of code and model.
+But we can probably go further and the scientific community might be ready for even more radical change in the dissemination of computational research, especially with respect to sharing and re-using of code and models.
 We, as researchers, have certainly a role to play and we should become the driving force for the upcoming and necessary changes.
 
 \bibliographystyle{apacite}
