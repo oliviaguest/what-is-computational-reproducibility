@@ -15,8 +15,20 @@
 
 %\title{Reproducibility and Reusability}
 %\title{Replication and Reuse in Computational Modelling}
-\title{Beyond reproducibility}
-\shorttitle{Beyond reproducibility}
+\title{Beyond Reproducibility}
+% * <guest.olivia@gmail.com> 2016-05-31T00:05:10.881Z:
+%
+% > \title{Beyond Reproducibility}
+% > \shorttitle{Beyond Reproducibility}
+%
+% what is beyond it?
+%
+% ^ <guest.olivia@gmail.com> 2016-05-31T15:33:02.760Z:
+%
+% I am serious here, like what exactly is beyond this component of science? I don't see any logic in saying "beyond" - it's like saying "Beyond Science" to me. Am I missing something?
+%
+% ^.
+\shorttitle{Beyond Reproducibility}
 
 \twoauthors{Olivia Guest}{Nicolas P. Rougier}
 
@@ -34,41 +46,59 @@ LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux, Centre Natio
 
 Reproduction is a cornerstone of the scientific method.
 If a paradigm or experiment is resistant to attempts at reproduction, related theories are also brought into question.
-An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur \cite{osc15} --- wherein theories lose their credibility in a domino-like effect.
+An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur --- wherein theories lose their credibility in a domino-like effect.
 
 \subsection*{What is computational reproducibility?}
 
 Computational modelling is the process by which phenomena found in complex systems are expressed algorithmically and/or mathematically.
 The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working models of the phenomena we are studying.
-In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also provides an implementation of a theory.
-Thus, it gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run as code \cite{mcclelland09}.
+In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also  implements a theory.
+It gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run \cite{mcclelland09}.
 
 However, for models to be evaluated, tested, criticized or even rejected, it is important to first ensure they are reproducible \cite{topalidou15}.  
 That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
 Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
 If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
 This adds further credence to both the model and its overarching theoretical framework.
-If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible (given the current specification) and is at most replicable \cite{crook13}.
+If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible (given its current specification) \cite{crook13}.
 
 
 \subsection*{How do we share computational research?}
 
-There have been few drastic changes within scholarly communication and research dissemination since 1665, when the first academic journals (\textit{Le Journal des Sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
-Dissemination of scientific discoveries by publishers continues to consist primarily of static text and figures.
+There have been few substantial changes within scholarly communication and research dissemination since 1665, when the first academic journals (\textit{Le Journal des Sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
+Dissemination of scientific discoveries via publishers continues to consist primarily of static text and figures.
 However, most research is underpinned by, if not wholly comprised of, code, which is inherently dynamic.
 Given code forms the backbone of modern scientific research, it is perhaps unusual that its position within this framework is not clear.
-For example, it is not straightforward where codebases should be placed: in a footnote ({\em code available upon request} syndrom), as supplementary material, or in a repository somewhere online?
-Even if increasingly more journals are requesting code from us, as well as raw data and even if several community repositories have appeared over the years, it is nonetheless striking that an overwhelming number of publishers make absolutely no provisions for hosting these files or facilitating interaction with them.
+For example, it is not straightforward where codebases should be placed: in a footnote (with code assured to be available upon request), in supplementary materials, or in an online repository?
+Even though more journals are requesting code from us, as well as raw data, few publisher-backed repositories exist.
+It is striking that an overwhelming number of journals make no provisions for and offer little guidance on hosting these files or indeed facilitating access to them.
 
 
-\subsection*{Is time ripe for radical changes in publication?}
+\subsection*{Is time ripe for changes?}
 
-Meanwhile in other parts of cyberspace, things are rapidly changing.
-A large number of innovative software tools (notebooks, virtual containers, active papers, dynamic figures, etc.) have been designed such as to facilitate model publication, sharing and re-use.
-For example, the first article with an interactive figure was published a few months ago \cite{ogrean16}, the Jupyter notebook\footnote{\url{http://jupyter.org}} on the discovery of gravitational waves has been made public and the binder project\footnote{\url{http://mybinderproject}} now offers the possibility to have online executable environments.
-At a different level, the ReScience journal\footnote{\url{http://rescience.github.io}},  that encourages the explicit reproduction of modelling work, appear to be promising some partial solutions to the wider problems mentioned above by tightly linking the article and its associated code repository.\\
+However, cyberspace has, like in many other cases, allowed people to come together in ways that solve problems without publishers' aid nor mediation.
+A large number of innovative software tools (notebooks, virtual containers, active papers, dynamic figures, etc.) facilitate model publication, sharing, and re-use; and some researchers are writing articles and tutorials on how to use version control \cite<e.g.,>{blischak16}.
+For example: the first article with an interactive figure has been recently published \cite{ogrean16}; the Jupyter notebook (\url{http://jupyter.org}) regarding the discovery of gravitational waves has been made public; and the binder project (\url{http://mybinderproject} THIS IS NOT A URL) offers online executable environments.
+In the same vein, the ReScience journal (\url{http://rescience.github.io}) encourages the explicit reproduction of modelling work.
+All these developments can be seen as incomplete, yet promising, solutions to some of the problems mentioned above, by linking articles/specifications with original codebases in a transparent way.
 
 But we can probably go further and the scientific community might be ready for even more radical change in the dissemination of computational research, especially with respect to sharing and re-using of code and models.
+% * <guest.olivia@gmail.com> 2016-05-31T00:03:57.193Z:
+%
+% > But we can probably go further and the scientific community might be ready for even more radical change in the dissemination of computational research, especially with respect to sharing and re-using of code and models.
+% > We, as researchers, have certainly a role to play and we should become the driving force for the upcoming and necessary changes.
+%
+% This is really vague  - can you clarify for me please?
+%
+% ^ <nicolas.rougier@inria.fr> 2016-05-31T06:32:33.390Z:
+%
+% The idea here is to suggest we have to take the lead on this matter and to propose ourselves new ways of exchanging science. It's supposed to be an open question that might receive answers through contribution to this dialogue.  But as you underlined, maybe it a bit too vague. Also, it might be worth citing the RIO journal (http://riojournal.com).
+%
+% ^ <guest.olivia@gmail.com> 2016-05-31T15:30:42.547Z:
+%
+% Yes, on the cite. I think what you just typed in your reply to my comment is much better than what we have for this section. 
+%
+% ^.
 We, as researchers, have certainly a role to play and we should become the driving force for the upcoming and necessary changes.
 
 \bibliographystyle{apacite}
