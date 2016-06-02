@@ -14,20 +14,7 @@
 \usepackage{apacite} 
 
 \title{Reproducibility in Computational Research}
-% * <guest.olivia@gmail.com> 2016-05-31T00:05:10.881Z:
-%
-% > \title{Beyond Reproducibility}
-% > \shorttitle{Beyond Reproducibility}
-%
-% what is beyond it?
-%
-% ^ <guest.olivia@gmail.com> 2016-05-31T15:33:02.760Z:
-%
-% I am serious here, like what exactly is beyond this component of science? I don't see any logic in saying "beyond" - it's like saying "Beyond Science" to me. Am I missing something?
-% Maybe I misused the word. The idea was to suggest reproducibility might be a first  and necessary step for better science practices but it is not the end of the story. We still need to go further for having truly reusable and cumulative computational research. 
-%
-% ^.
-\shorttitle{Beyond Reproducibility}
+\shorttitle{Reproducibility in Computational Research}
 
 \twoauthors{Olivia Guest}{Nicolas P. Rougier}
 
@@ -54,7 +41,7 @@ The creation of such simulations is useful because it allows us to test whether 
 In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also  implements a theory.
 It gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run \cite{mcclelland09}.
 
-However, for models to be evaluated, tested, criticized or even rejected, it is important to first ensure they are reproducible \cite{topalidou15}.  
+For models to be evaluated, tested, criticized or even rejected, it is important to first ensure they are reproducible \cite{topalidou15}.  
 That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
 Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
 If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
@@ -75,38 +62,15 @@ It is striking that an overwhelming number of journals make no provisions for an
 
 \subsection*{Is time ripe for changes?}
 
-However, cyberspace has, like in many other cases, allowed people to come together in ways that solve problems without publishers' aid nor mediation.
-A large number of innovative software tools (notebooks, virtual containers, active papers, dynamic figures, etc.) facilitate model publication, sharing, and re-use; and some researchers are teaching computational skills and best practices \cite<e.g.,>{wilson16}.
-% * <nicolas.rougier@inria.fr> 2016-06-01T10:36:47.459Z:
-%
-% > \cite<e.g.,>{blischak16}.
-%
-% Maybe a Software Carpentry related citation would be better, what do you think ?
-%
-% ^.
-For example: the first article with an interactive figure has been recently published \cite{ogrean16}; the Jupyter notebook (\url{http://jupyter.org}) regarding the discovery of gravitational waves has been made public; and the binder project (\url{http://mybinder.org}) offers online executable environments.
-In the same vein, the ReScience journal (\url{http://rescience.github.io}) encourages the explicit reproduction of modelling work.
-All these developments can be seen as incomplete, yet promising, solutions to some of the problems mentioned above, by linking articles/specifications with original codebases in a transparent way.\\
+However, cyberspace has, like in many other cases, allowed people to come together to solve problems without publishers' aid nor mediation.
+A large number of innovative software tools (e.g., the binder project) make modelling work accessible.
+Some researchers have taken matters into their own hands and created resources for best practice \cite<e.g., version control:>{blischak16, eglen16, wilson16}.
+While others lead by example, e.g., \citeA{ogrean16} published an article with an interactive figure, and the LIGO Open Science Center released extensive amounts of data and code \cite{ligo16}.
+In the same vein, the \emph{ReScience journal} encourages the reproduction of modelling work.
 
-Maybe the time is ripe for the scientific community to take the lead on this matter and to become a driving force for proposing new and disruptive means of disseminating computational science. 
+Is the scientific community read to rise to the challenge and drive changes with respect to: linking articles with original codebases in a transparent way and, more broadly, making sure theories are specified and implemented in coherent ways?
 
 
-% * <guest.olivia@gmail.com> 2016-05-31T00:03:57.193Z:
-%
-% > But we can probably go further and the scientific community might be ready for even more radical change in the dissemination of computational research, especially with respect to sharing and re-using of code and models.
-% > We, as researchers, have certainly a role to play and we should become the driving force for the upcoming and necessary changes.
-%
-% This is really vague  - can you clarify for me please?
-%
-% ^ <nicolas.rougier@inria.fr> 2016-05-31T06:32:33.390Z:
-%
-% The idea here is to suggest we have to take the lead on this matter and to propose ourselves new ways of exchanging science. It's supposed to be an open question that might receive answers through contribution to this dialogue.  But as you underlined, maybe it a bit too vague. Also, it might be worth citing the RIO journal (http://riojournal.com).
-%
-% ^ <guest.olivia@gmail.com> 2016-05-31T15:30:42.547Z:
-%
-% Yes, on the cite. I think what you just typed in your reply to my comment is much better than what we have for this section. 
-%
-% ^.
 
 \bibliographystyle{apacite}
 
