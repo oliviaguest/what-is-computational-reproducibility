@@ -1,6 +1,29 @@
-% This file was created with JabRef 2.10b2.
-% Encoding: UTF-8
-
+@Article{wilson16,
+  Author  = {Wilson, G},
+  Title   = {Software Carpentry: lessons learned
+             [version 2; referees: 3 approved]},
+  Journal = {F1000Research},
+  Volume  = {3},
+  Year    = {2016},
+  Number  = {62},
+  DOI     = {10.12688/f1000research.3-62.v2}
+}
+@misc{ligo16,
+  title = {{LIGO Open Science Center: Tutorials}},
+  howpublished = {\url{https://losc.ligo.org/tutorials/}},
+  note = {Accessed: 2016-06-02},
+  year= {2016}
+}
+@Article{ogrean16,
+  author                   = {G. A. Ogrean and R. J. van Weeren and C. Jones and W. Forman and W. A. Dawson and N. Golovich and F. Andrade-Santos and S. S. Murray and P. Nulsen and E. Roediger and A. Zitrin and E. Bulbul and R. Kraft and A. Goulding and K. Umetsu and T. Mroczkowski and A. Bonafede and S. Randall and J. Sayers and E. Churazov and L. David and J. Merten and M. Donahue and B. Mason and P. Rosati and A. Vikhlinin and H. Ebeling},
+  title                    = {Frontier Fields Clusters: Deep Chandra Observations of the Complex Merger MACS~J1149.6+2223},
+  journal                  = {The Astrophysical Journal},
+  volume                   = {819},
+  number                   = {2},
+  pages                    = {113},
+  year                     = {2016},
+  doi = {10.3847/0004-637X/819/2/113}
+}
 
 @Article{baker15,
   Title                    = {Over Half of Psychology Studies Fail Reproducibility Test: Largest Replication Study to Date Casts Doubt on Many Published Positive Results},
@@ -8,21 +31,6 @@
   Journal                  = {Nature News},
   Year                     = {2015},
   Volume                   = {27}
-}
-
-@Article{blischak16,
-  Title                    = {A Quick Introduction to Version Control with Git and GitHub},
-  Author                   = {Blischak, John D. AND Davenport, Emily R. AND Wilson, Greg},
-  Journal                  = {PLoS Comput Biol},
-  Year                     = {2016},
-
-  Month                    = {01},
-  Number                   = {1},
-  Pages                    = {1-18},
-  Volume                   = {12},
-
-  Doi                      = {10.1371/journal.pcbi.1004668},
-  Publisher                = {Public Library of Science}
 }
 
 @Article{carpenter12,
@@ -37,6 +45,18 @@
   Doi                      = {10.1126/science.335.6076.1558},
   Eprint                   = {http://science.sciencemag.org/content/335/6076/1558.full.pdf},
   ISSN                     = {0036-8075},
+  Publisher                = {American Association for the Advancement of Science}
+}
+
+@Article{osc15,
+  Title                    = {Estimating the reproducibility of psychological science},
+  Author                   = {{Open Science Collaboration}},
+  Journal                  = {Science},
+  Year                     = {2015},
+  Number                   = {6251},
+  Pages                    = {aac4716},
+  Volume                   = {349},
+
   Publisher                = {American Association for the Advancement of Science}
 }
 
@@ -90,16 +110,6 @@
   Publisher                = {Nature Publishing Group}
 }
 
-@Article{eglen16,
-  Title                    = {Towards standard practices for sharing computer code and programs in neuroscience},
-  Author                   = {Eglen, Stephen and Marwick, Ben and Halchenko, Yaroslav and Hanke, Michael and Sufi, Shoaib and Gleeson, Padraig and Silver, R. Angus and Davison, Andrew and Lanyon, Linda and Abrams, Mathew and Wachtler, Thomas and Willshaw, David J and Pouzat, Christophe and Poline, Jean-Baptiste},
-  Journal                  = {bioRxiv},
-  Year                     = {2016},
-
-  Doi                      = {10.1101/045104},
-  Publisher                = {Cold Spring Harbor Labs Journals}
-}
-
 @InProceedings{gomez10,
   Title                    = {Replications types in experimental disciplines},
   Author                   = {G{\'o}mez, Omar S and Juristo, Natalia and Vegas, Sira},
@@ -126,8 +136,8 @@
   Pages                    = {54--61},
   Volume                   = {17},
 
-  Doi                      = {10.1109/MCSE.2015.64},
-  Publisher                = {AIP Publishing}
+  Publisher                = {AIP Publishing},
+  doi = {10.1109/MCSE.2015.64}
 }
 
 @Article{hucka16,
@@ -144,6 +154,7 @@
   Year                     = {1995},
 
   Month                    = {September},
+ 
   Pages                    = {444-452},
   Volume                   = {28}
 }
@@ -156,33 +167,9 @@
   Number                   = {1},
   Pages                    = {11--38},
   Volume                   = {1},
+  doi = {10.1111/j.1756-8765.2008.01003.x},
 
-  Doi                      = {10.1111/j.1756-8765.2008.01003.x},
   Publisher                = {Wiley Online Library}
-}
-
-@Article{ogrean16,
-  Title                    = {Frontier Fields Clusters: Deep Chandra Observations of the Complex Merger MACS~J1149.6+2223},
-  Author                   = {G. A. Ogrean and R. J. van Weeren and C. Jones and W. Forman and W. A. Dawson and N. Golovich and F. Andrade-Santos and S. S. Murray and P. Nulsen and E. Roediger and A. Zitrin and E. Bulbul and R. Kraft and A. Goulding and K. Umetsu and T. Mroczkowski and A. Bonafede and S. Randall and J. Sayers and E. Churazov and L. David and J. Merten and M. Donahue and B. Mason and P. Rosati and A. Vikhlinin and H. Ebeling},
-  Journal                  = {The Astrophysical Journal},
-  Year                     = {2016},
-  Number                   = {2},
-  Pages                    = {113},
-  Volume                   = {819},
-
-  Doi                      = {10.3847/0004-637X/819/2/113}
-}
-
-@Article{osc15,
-  Title                    = {Estimating the reproducibility of psychological science},
-  Author                   = {{Open Science Collaboration}},
-  Journal                  = {Science},
-  Year                     = {2015},
-  Number                   = {6251},
-  Pages                    = {aac4716},
-  Volume                   = {349},
-
-  Publisher                = {American Association for the Advancement of Science}
 }
 
 @Article{peng11,
@@ -195,6 +182,7 @@
   Volume                   = {334},
 
   Doi                      = {10.1126/science.1213847},
+
   ISSN                     = {0036-8075},
   Publisher                = {American Association for the Advancement of Science}
 }
@@ -208,7 +196,8 @@
   Pages                    = {405-408},
   Volume                   = {10},
 
-  Doi                      = {10.1093/biostatistics/kxp014}
+  Doi                      = {10.1093/biostatistics/kxp014},
+
 }
 
 @Article{topalidou15,
@@ -229,25 +218,28 @@
   Journal                  = {Nature News},
   Year                     = {2015},
   Volume                   = {3},
-
-  Doi                      = {10.1038/nature.2015.17694}
+  doi={10.1038/nature.2015.17694}
 }
 
-@Article{wilson16,
-  Title                    = {Software Carpentry: lessons learned [version 2; referees: 3 approved]},
-  Author                   = {Wilson, G},
-  Journal                  = {F1000Research},
-  Year                     = {2016},
-  Number                   = {62},
-  Volume                   = {3},
-
-  Doi                      = {10.12688/f1000research.3-62.v2}
+@article {eglen16,
+	author = {Eglen, Stephen and Marwick, Ben and Halchenko, Yaroslav and Hanke, Michael and Sufi, Shoaib and Gleeson, Padraig and Silver, R. Angus and Davison, Andrew and Lanyon, Linda and Abrams, Mathew and Wachtler, Thomas and Willshaw, David J and Pouzat, Christophe and Poline, Jean-Baptiste},
+	title = {Towards standard practices for sharing computer code and programs in neuroscience},
+	year = {2016},
+	doi = {10.1101/045104},
+	publisher = {Cold Spring Harbor Labs Journals},
+	journal = {bioRxiv}
 }
 
-@Misc{ligo16,
-  Title                    = {{LIGO Open Science Center: Tutorials}},
-  HowPublished             = {\url{https://losc.ligo.org/tutorials/}},
-  Note                     = {Accessed: 2016-06-02},
-  Year                     = {2016}
+@article {blischak16,
+    author = {Blischak, John D. AND Davenport, Emily R. AND Wilson, Greg},
+    journal = {PLoS Comput Biol},
+    publisher = {Public Library of Science},
+    title = {A Quick Introduction to Version Control with Git and GitHub},
+    year = {2016},
+    month = {01},
+    volume = {12},
+    pages = {1-18},
+    abstract = {},
+    number = {1},
+    doi = {10.1371/journal.pcbi.1004668}
 }
-
