@@ -24,7 +24,12 @@ LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux, Centre Natio
 \begin{document}
 \maketitle
 
-Reproduction is a cornerstone of the scientific method.
+%Just some quick notes:
+%In computational research the code is the experiment, so if the code does not replicate, i.e., run from scratch then, like in a failure to replicate an experiment, we must assume that there is a deep problem with the overarching theory 
+%In engineering software, they do not care if the code encapsulates a theory, but instead if it robustly runs on different machines in different contexts in an identical or functionally comparable way
+%In science we wish to have code that runs on many machines well, but more importantly we wish to test a high-level concept (a theoretical position), so we actually care more about the ideas within the code being implementable again. The code is the experiment.
+
+Reproducibility is the cornerstone of the scientific method.
 If a paradigm or experiment is resistant to attempts at reproduction, related theories are also brought into question.
 An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur --- wherein theories lose their credibility in a domino-like effect.
 
@@ -33,13 +38,14 @@ Computational modelling is the process by which phenomena found in complex syste
 The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working models of the phenomena we are studying.
 In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also  implements a theory.
 It gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run \cite{mcclelland09}.
+In this context, a model is said \textbf{replicable} if the experiments can be carried out successfully within the original codebase, with the implicit assumption that such codebase must be available.
 
-For models to be evaluated, tested, criticized or even rejected, it is important to first ensure they are reproducible \cite{topalidou15}.  
+However, for models to be evaluated, tested, criticized or even rejected, it is mandatory to also ensure they are \textbf{reproducible} \cite{topalidou15}.  
 That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
 Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
 If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
 This adds further credence to both the model and its overarching theoretical framework.
-If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible \cite{crook13}.
+%If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible \cite{crook13}.
 
 \subsection*{How do we share computational research?}
 There have been few substantial changes within scholarly communication and research dissemination since 1665, when the first academic journals (\textit{Le Journal des Sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
