@@ -24,30 +24,37 @@ LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux, Centre Natio
 \begin{document}
 \maketitle
 
+
 %Just some quick notes:
 %In computational research the code is the experiment, so if the code does not replicate, i.e., run from scratch then, like in a failure to replicate an experiment, we must assume that there is a deep problem with the overarching theory 
 %In engineering software, they do not care if the code encapsulates a theory, but instead if it robustly runs on different machines in different contexts in an identical or functionally comparable way
 %In science we wish to have code that runs on many machines well, but more importantly we wish to test a high-level concept (a theoretical position), so we actually care more about the ideas within the code being implementable again. The code is the experiment.
 
-Reproducibility is the cornerstone of the scientific method.
+Reproducibility is a cornerstone of the scientific method.
+%saying it's THE cornderstone sounds a bit too far to me
 If a paradigm or experiment is resistant to attempts at reproduction, related theories are also brought into question.
 An important corollary is that if failures to reproduce happen often then so-called reproducibility ``crises'' occur --- wherein theories lose their credibility in a domino-like effect.
 
 \subsection*{What is computational reproducibility?}
-Computational modelling is the process by which phenomena found in complex systems are expressed algorithmically and/or mathematically.
+Computational modelling is the process by which phenomena found in complex systems are expressed algorithmically.
+%and/or mathematically. I would argue that's mathematical modelling
 The creation of such simulations is useful because it allows us to test whether our understanding is sophisticated enough to create credible working models of the phenomena we are studying.
 In neuroscience and cognitive science especially, computational modelling comprises more than just capturing a single phenomenon, it also  implements a theory.
 It gives scientists a method of allowing their ideas to be executed, i.e., for emergent properties to appear when they are implemented and run \cite{mcclelland09}.
-In this context, a model is said \textbf{replicable} if the experiments can be carried out successfully within the original codebase, with the implicit assumption that such codebase must be available.
+In this context, a model is said to be  \textbf{replicable} if experiments within it can be carried out successfully using the original codebase, with the implicit assumption that such a codebase is available.
 
-However, for models to be evaluated, tested, criticized or even rejected, it is mandatory to also ensure they are \textbf{reproducible} \cite{topalidou15}.  
+However, for models to be evaluated
+%, tested, criticized or even rejected,
+%for me evaluated contains the three following verbs, so you can't have all four and sounds sensible - either you have the umbrella term "evaluate" or the three specific terms
+it is mandatory to ensure they are \textbf{reproducible} \cite{topalidou15}.  
 That is, that they can be recreated based on their specification --- the details deemed important enough to be included in the accompanying article \cite{hinsen15}.
-Ideally, this should be possible without contacting the authors for advice, and critically, without looking at the original code \cite{cooper14}.
+Ideally, this should be possible without contacting the authors for advice, and critically, without referring to the original code \cite{cooper14}.
 If the specification is sufficient to successfully recreate the codebase from scratch, then the model is said to be reproducible.
 This adds further credence to both the model and its overarching theoretical framework.
-%If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible \cite{crook13}.
+%why was this following sentence left out? I thought it was the crux of this paragraph?
+If not, and the model cannot be recreated, then even if the experiments can be carried out successfully within the original codebase, the model is not reproducible \cite{crook13}.
 
-\subsection*{How do we share computational research?}
+\subsection*{How to share computational research?}
 There have been few substantial changes within scholarly communication and research dissemination since 1665, when the first academic journals (\textit{Le Journal des Sçavans} and \textit{Philosophical Transactions of the Royal Society}) were published.
 Dissemination of scientific discoveries via publishers continues to consist primarily of static text and figures.
 However, most research is underpinned by, if not wholly comprised of, code, which is inherently dynamic.
@@ -56,14 +63,14 @@ For example, it is not straightforward where codebases should be placed: in a fo
 Even though more journals are requesting code from us, as well as raw data, few publisher-backed repositories exist.
 It is striking that an overwhelming number of journals make no provisions for and offer little guidance on hosting these files or indeed facilitating access to them.
 
-\subsection*{Is time ripe for changes?}
+\subsection*{Is it time for progress?}
 However, the open source and open science communities proposed solutions to some of these problems without publishers' aid nor mediation.
 Firstly, a set of new innovative software tools (e.g., the binder project) make modelling work more accessible.
 Secondly, some researchers have taken matters into their own hands and created resources for best practice \cite<e.g., version control:>{blischak16, eglen16, wilson16}.
-While others lead by example, e.g., \citeA{ogrean16} published an article with an interactive figure, and the LIGO Open Science Center released extensive amounts of data and code \cite{ligo16}.
+While others lead by example: \citeA{ogrean16} published an article with an interactive figure; and the LIGO Open Science Center released extensive amounts of data and code \cite{ligo16}.
 In the same vein, the \emph{ReScience journal} encourages the reproduction of modelling work.
 
-Is the scientific community ready to rise to the challenge and drive changes with respect to: associating articles with original codebases in a transparent way and, more broadly, making sure computational theories are specified and implemented in coherent ways?
+Is the scientific community ready to embrace and facilitate changes with respect to: associating articles with original codebases in a transparent way and, more broadly, making sure computational theories are well-specified and coherently implemented?
 
 \bibliographystyle{apacite}
 \bibliography{ref}
