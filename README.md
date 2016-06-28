@@ -1,5 +1,4 @@
-#Reproducibility in Computational Research
-
+#What is computational reproducibility?
 Read paper: https://github.com/oliviaguest/reproducibility-in-computational-research/blob/master/guest_rougier_2016.pdf 
 
 ##Synching Overleaf and Github
